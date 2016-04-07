@@ -76,6 +76,9 @@ function independantathome_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	//add site logo
+	add_theme_support( 'site-logo' );
 }
 endif;
 add_action( 'after_setup_theme', 'independantathome_setup' );
