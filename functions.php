@@ -110,6 +110,38 @@ function independantathome_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name' => 'Footer Widget 1',
+		'id' => 'footer_widget_1',
+		'before_widget' => '<div class="footer-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Footer Widget 2',
+		'id' => 'footer_widget_2',
+		'before_widget' => '<div class="footer-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Footer Widget 3',
+		'id' => 'footer_widget_3',
+		'before_widget' => '<div class="footer-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Footer Widget 4',
+		'id' => 'footer_widget_4',
+		'before_widget' => '<div class="footer-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'independantathome_widgets_init' );
 
