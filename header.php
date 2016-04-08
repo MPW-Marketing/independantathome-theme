@@ -26,6 +26,13 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
+		<?php
+			if ( ! function_exists( 'the_site_logo' ) ) {
+		return;
+	} else {
+		the_site_logo();
+	}
+?>
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
