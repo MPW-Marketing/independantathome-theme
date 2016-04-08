@@ -17,7 +17,6 @@
 				<div class="footer-inner">
 			</div>
 </div>
-<?php } ?>
 	<div id="footer-wrapper"><footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-inner">
 <div class="row">
