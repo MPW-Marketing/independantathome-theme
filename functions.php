@@ -78,7 +78,7 @@ function independantathome_setup() {
 	) ) );
 
 	//add site logo
-	add_theme_support( 'site-logo' );
+	add_theme_support( 'site-logo', 'full' );
 }
 endif;
 add_action( 'after_setup_theme', 'independantathome_setup' );
