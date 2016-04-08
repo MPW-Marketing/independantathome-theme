@@ -26,6 +26,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
+		<div class="logo-container"
 		<?php
 indep_the_site_logo()
 ?>
@@ -42,6 +43,14 @@ indep_the_site_logo()
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
+			</div><!--.logo container -->
+			<div class="branding-right">
+			<?php if ( is_active_sidebar( 'footer_widget_1' ) ) : ?>
+	<div id="footer-1-widgets">
+		<?php dynamic_sidebar( 'footer_widget_1' ); ?>
+	</div>
+<?php endif; ?>
+</div><!-- .branding-right-->
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

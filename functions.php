@@ -145,6 +145,23 @@ function independantathome_widgets_init() {
 		'before_title' => '<h3 class="footer-widget-title">',
 		'after_title' => '</h3>',
 	) );
+		register_sidebar( array(
+		'name' => 'Header Right Side',
+		'id' => 'header_right_widget',
+		'before_widget' => '<div class="header-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="header-widget-title">',
+		'after_title' => '</h3>',
+	) );
+		register_sidebar( array(
+		'name' => 'Footer Copyright Widget',
+		'id' => 'footer_copyright',
+		'before_widget' => '<div class="footer-copyright-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-copyright-widget-title">',
+		'after_title' => '</h3>',
+	) );
+
 }
 add_action( 'widgets_init', 'independantathome_widgets_init' );
 
