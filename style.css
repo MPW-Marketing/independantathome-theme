@@ -341,7 +341,7 @@ table {
 .site-main {
   margin: 0 25% 0 0; }
 
-.site-content .widget-area {
+.site-content .widget-area, .site-header .widget-area {
   float: right;
   overflow: hidden;
   width: 25%; }
