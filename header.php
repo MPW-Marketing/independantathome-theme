@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-		<div class="logo-container"
+		<div class="logo-container half-col"
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 		<?php
 indep_the_site_logo()
@@ -46,7 +46,7 @@ indep_the_site_logo()
 			<?php
 			endif; ?>
 			</div><!--.logo container -->
-			<div class="branding-right">
+			<div class="branding-right half-col">
 			<?php if ( is_active_sidebar( 'header_right_widget' ) ) : ?>
 	<div id="header_right_widget">
 		<?php dynamic_sidebar( 'header_right_widget' ); ?>
