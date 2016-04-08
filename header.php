@@ -30,7 +30,7 @@
 			if ( ! function_exists( 'the_site_logo' ) ) {
 		return;
 	} else {
-		the_site_logo();
+		the_site_logo('full');
 	}
 ?>
 			<?php
