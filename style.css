@@ -456,11 +456,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: red; }
+  color: #0A4778; }
   a:visited {
-    color: purple; }
+    color: #0A4778; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #0A4778; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -498,7 +498,8 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    margin-right: 30px; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
