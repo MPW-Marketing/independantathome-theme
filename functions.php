@@ -42,6 +42,9 @@ function independantathome_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	// additional image sizes
+	add_image_size( 'logo-main', 266, 45 ); //1100 pixels wide (and unlimited height)
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'independantathome' ),
@@ -78,7 +81,7 @@ function independantathome_setup() {
 	) ) );
 
 	//add site logo
-	add_theme_support( 'site-logo', 'full' );
+	add_theme_support( 'site-logo', 'logo-main' );
 }
 endif;
 add_action( 'after_setup_theme', 'independantathome_setup' );
