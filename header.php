@@ -27,11 +27,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 		<?php
-			if ( ! function_exists( 'the_site_logo' ) ) {
-		return;
-	} else {
-		the_site_logo('full');
-	}
+indep_the_site_logo()
 ?>
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
