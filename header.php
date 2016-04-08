@@ -45,9 +45,9 @@ indep_the_site_logo()
 			endif; ?>
 			</div><!--.logo container -->
 			<div class="branding-right">
-			<?php if ( is_active_sidebar( 'footer_widget_1' ) ) : ?>
-	<div id="footer-1-widgets">
-		<?php dynamic_sidebar( 'footer_widget_1' ); ?>
+			<?php if ( is_active_sidebar( 'header_right_widget' ) ) : ?>
+	<div id="header_right_widget">
+		<?php dynamic_sidebar( 'header_right_widget' ); ?>
 	</div>
 <?php endif; ?>
 </div><!-- .branding-right-->
