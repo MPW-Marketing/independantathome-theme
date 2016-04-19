@@ -9,7 +9,12 @@
  * @package indep@home
  */
 
-?><!DOCTYPE html>
+?>
+<?php $show_slider = get_post_meta( get_the_ID(), 'show_slider', true );
+if ($show_slider === 'yes') {
+	$slider_number = get_post_meta( get_the_ID(), 'slider_number', true );
+	} ?>
+	<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -62,3 +67,6 @@ indep_the_site_logo()
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+	if ($show_slider === 'yes') {
+	layerslider($slider_number);
+	} ?>

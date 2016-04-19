@@ -8,10 +8,11 @@
  */
 
 ?>
+<?php $show_page_title = get_post_meta( get_the_ID(), 'show_page_title', true );?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php if ($show_page_title !== 'no' ){ the_title( '<h1 class="entry-title">', '</h1>' );} ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
