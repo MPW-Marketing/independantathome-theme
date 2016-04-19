@@ -11,7 +11,7 @@
 
 ?>
 <?php $show_slider = get_post_meta( get_the_ID(), 'show_slider', true );
-	$slider_number = get_post_meta( get_the_ID(), 'slider_number', true );
+	if ($show_slider) {$slider_number = get_post_meta( get_the_ID(), 'slider_number', true );}
  ?>
 	<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -67,6 +67,6 @@ indep_the_site_logo()
 
 	<div id="content" class="site-content">
 	<?php
-	if ($show_slider === 'Yes') {
+	if ($show_slider) {
 	layerslider($slider_number);
 	} ?>
