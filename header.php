@@ -67,6 +67,6 @@ indep_the_site_logo()
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-	if ($show_slider === 'yes') {
+	<?php if ($show_slider === 'yes') {
 	layerslider($slider_number);
 	} ?>
