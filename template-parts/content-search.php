@@ -8,10 +8,10 @@
  */
 
 ?>
-
+<?php $hide_page_title = get_post_meta( get_the_ID(), 'hide_page_title', true );?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php if (!$hide_page_title){ the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); }?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
