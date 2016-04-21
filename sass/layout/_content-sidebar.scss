@@ -31,3 +31,13 @@
 	width: 50%;
 }
 
+@media screen and (max-width: $small-break-point) {
+	.content-area {
+	margin: 0;
+	width: $size__site_content_small;
+}
+.site-content .widget-area, .site-header .widget-area  {
+	float: left;
+	width: $size__site_content;
+}
+}

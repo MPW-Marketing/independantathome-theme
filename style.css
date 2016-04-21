@@ -362,6 +362,14 @@ table {
   float: left;
   width: 50%; }
 
+@media screen and (max-width: 800px) {
+  .content-area {
+    margin: 0;
+    width: 100%; }
+
+  .site-content .widget-area, .site-header .widget-area {
+    float: left;
+    width: 80%; } }
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
