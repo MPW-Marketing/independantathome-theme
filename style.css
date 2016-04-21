@@ -369,7 +369,10 @@ table {
 
   .site-content .widget-area, .site-header .widget-area {
     float: left;
-    width: 80%; } }
+    width: 80%; }
+
+  .site-main {
+    margin: 0; } }
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
